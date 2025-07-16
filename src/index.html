@@ -1,1 +1,364 @@
-<h1>Vinith portfolio</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinith Gunturu | Portfolio</title>
+    <meta name="description" content="Professional portfolio showcasing my work and skills">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3B82F6",
+                        secondary: "#1E40AF",
+                        dark: "#1F2937",
+                        light: "#F9FAFB"
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.5s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .active {
+            color: #3B82F6;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-light text-dark font-sans antialiased">
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-2xl font-bold text-primary">VG</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link hover:text-primary transition">Home</a>
+                    <a href="#about" class="nav-link hover:text-primary transition">About</a>
+                    <a href="#projects" class="nav-link hover:text-primary transition">Projects</a>
+                    <a href="#contact" class="nav-link hover:text-primary transition">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-dark">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block py-2 hover:text-primary transition">Home</a>
+                <a href="#about" class="block py-2 hover:text-primary transition">About</a>
+                <a href="#projects" class="block py-2 hover:text-primary transition">Projects</a>
+                <a href="#contact" class="block py-2 hover:text-primary transition">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 py-12 md:py-24">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 animate-fade-in">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-primary">Vinith Gunturu</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">MERN Stack Developer</h2>
+                    <p class="text-lg mb-8 text-gray-600 max-w-lg">I create beautiful, responsive websites with modern technologies and clean code.</p>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary transition">View Work</a>
+                        <a href="mailto:gunturuvinith@gmail.com" class="border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition">Contact Me</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center animate-slide-up">
+                    <img src="asserts\profile.jpg" alt="Profile image" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover shadow-xl" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About <span class="text-primary">Me</span></h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <img src="asserts\second profile img.webp" alt="About me image" class="rounded-lg w-64 h-64 object-cover shadow-lg" loading="lazy">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
+                    <p class="text-gray-600 mb-6">Aspiring MERN Stack Developer with practical experience in developing scalable web applications and machine learning solutions. Proficient in Node.js, React.js and MongoDB, with proven problem-solving skills backed by solving 200+ challenges on LeetCode.</p>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold mb-4">My Skills</h4>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="bg-gray-100 px-4 py-2 rounded-full">HTML5</span>
+                            <span class="bg-gray-100 px-4 py-2 rounded-full">CSS3</span>
+                            <span class="bg-gray-100 px-4 py-2 rounded-full">JavaScript</span>
+                            <span class="bg-gray-100 px-4 py-2 rounded-full">React</span>
+                            <span class="bg-gray-100 px-4 py-2 rounded-full">Tailwind CSS</span>
+                            <span class="bg-gray-100 px-4 py-2 rounded-full">ExpressJs</span>
+                            <span class="bg-gray-100 px-4 py-2 rounded-full">NodeJs</span>
+                            <span class="bg-gray-100 px-4 py-2 rounded-full">ExpressJs</span>
+                            <span class="bg-gray-100 px-4 py-2 rounded-full">Data Structures</span>
+                            <span class="bg-gray-100 px-4 py-2 rounded-full">C++</span>
+                        </div>
+                    </div>
+                    
+                    <a href="asserts\MernStackResume.pdf" class="inline-flex items-center text-primary font-medium">
+                        Download Resume
+                        <i class="fas fa-download ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">My <span class="text-primary">Projects</span></h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Here are some of my recent projects. Each one was built with attention to detail and user experience.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-slide-up">
+                    <img src="asserts\wanderlust image.avif" alt="Wanderlust" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Wanderlust (Airbnb clone)</h3>
+                        <p class="text-gray-600 mb-4">A full-featured online Hotel Booking platform built with Bootstrap and Node.js.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Express.js</span>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Node.js</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">MongoDB</span>
+                        </div>
+                        <a href="https://airbnb12.onrender.com/listings" class="text-primary font-medium inline-flex items-center">
+                            View Project
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-slide-up" style="animation-delay: 0.1s">
+                    <img src="asserts\face recognition.jpeg" alt="Task management app" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Face recognition attendance system</h3>
+                        <p class="text-gray-600 mb-4">Face Recognition Attendance System using Python to automate and streamline the attendance process.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Dlib</span>
+                            <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">Opencv</span>
+                        </div>
+                        <a href="https://github.com/Gunturu-vinith-3257/Face-recognition-attendance-system" class="text-primary font-medium inline-flex items-center">
+                            View Project
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-slide-up" style="animation-delay: 0.2s">
+                    <img src="asserts\Titanic predictionImg.png" alt="Weather dashboard" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Titanic Survival Prediction</h3>
+                        <p class="text-gray-600 mb-4">Real-time weather information with 5-day forecast and location search.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">python</span>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Scikit-learn</span>
+                            <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Pandas</span>
+                            <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Matplotlib</span>
+                        </div>
+                        <a href="https://github.com/Gunturu-vinith-3257/Data_Sciencie_Projects/blob/main/titanic_survival_prediction.ipynb" class="text-primary font-medium inline-flex items-center">
+                            View Project
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Get In <span class="text-primary">Touch</span></h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary transition w-full md:w-auto">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg h-full">
+                        <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-primary mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <p class="text-gray-600">gunturuvinith@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-primary mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-medium">Phone</h4>
+                                    <p class="text-gray-600">8247507578</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-primary mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-medium">Location</h4>
+                                    <p class="text-gray-600">Jaggayyapet, Andhra Pradesh</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-medium mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/Gunturu-vinith-3257" class="text-gray-600 hover:text-primary transition"><i class="fab fa-github text-2xl"></i></a>
+                                <a href="https://www.linkedin.com/in/vinith-gunturu-2003D/" class="text-gray-600 hover:text-primary transition"><i class="fab fa-linkedin text-2xl"></i></a>
+                                <a href="#" class="text-gray-600 hover:text-primary transition"><i class="fab fa-twitter text-2xl"></i></a>
+                                <a href="#" class="text-gray-600 hover:text-primary transition"><i class="fab fa-instagram text-2xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    
+                    <p class="text-gray-400 mt-2">© 2023 Vinith Gunturu. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#home" class="text-gray-400 hover:text-white transition">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
+                    <a href="#projects" class="text-gray-400 hover:text-white transition">Projects</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Highlight active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link, #mobile-menu a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop - 300) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contact-form');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send the form data to a server
+            console.log({ name, email, subject, message });
+            
+            // Show success message
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        });
+        
+        // Prevent default anchor behavior and smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
